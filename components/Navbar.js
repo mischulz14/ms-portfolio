@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 
 function Navbar({ router }) {
   const [change, setChange] = useState(false);
+  const [show, setShow] = useState(false);
   const navs = [
     { text: 'About', href: '#about', dataCy: 'aboutPageLink' },
     { text: 'Portfolio', href: '#portfolio', dataCy: 'portfolioPageLink' },
@@ -50,7 +51,42 @@ function Navbar({ router }) {
             </li>
           ))}
         </ul>
+
+        <div
+          onClick={() => setShow(true)}
+          className={`${
+            show ? 'hidden' : 'block'
+          } flex flex-col items-center justify-center nav-side w-[35px] cursor-pointer`}
+        >
+          <div className=" h-[2px] bg-black mb-[8px] mt-[7px]"></div>
+          <div className=" h-[2px] bg-black mb-[8px]"></div>
+          <div className=" h-[2px] bg-black"></div>
+        </div>
       </div>
+
+      <ul
+        className={`${
+          show ? 'block' : 'hidden'
+        } flex flex-col pt-20 px-10 bg-slate-50 backdrop-blur-sm opacity-90 gap-8 absolute top-0 right-0 h-[100vh] transition-all duration-300`}
+      >
+        <button
+          onClick={() => setShow(false)}
+          className="absolute text-bold translate-x-[180%] z-50 -translate-y-[150%] bg-slate-500 text-white rounded-full opacity-100 w-[40px] h-[40px]"
+        >
+          X
+        </button>
+        {navs.map((nav) => (
+          <li
+            data-cy={nav.dataCy}
+            className="font-semibold nav-item "
+            key={nav.href}
+          >
+            <Link href={nav.href}>
+              <a>{nav.text}</a>
+            </Link>
+          </li>
+        ))}
+      </ul>
     </nav>
   );
 }

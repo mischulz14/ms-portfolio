@@ -7,7 +7,7 @@ function Contact() {
         <title>Contact</title>
       </Head>
 
-      <section id="contact" className="h-[50vh] text-center section">
+      <section id="contact" className="pb-10 text-center section">
         <div className="container">
           <div className="w-full text-wrapper">
             <h1
