@@ -3,9 +3,9 @@ import Navbar from './Navbar';
 
 const Layout = (props) => {
   return (
-    <div className="max-w-[60vw] mx-auto">
+    <div className="xl:max-w-[60vw] lg:max-w-[90vw] mx-auto layout">
       <Navbar />
-      <main>{props.children}</main>
+      <main className="mx-auto">{props.children}</main>
       <Footer />
     </div>
   );

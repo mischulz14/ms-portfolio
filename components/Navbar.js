@@ -28,20 +28,20 @@ function Navbar({ router }) {
 
   return (
     <nav
-      className={` transition-all duration-300  ease-in navbar py-6 px-4 text-xl fixed  flex justify-between w-[60vw] z-50 bg-white ${
+      className={` transition-all duration-300 mx-auto  ease-in navbar py-6 px-4 text-xl fixed  flex justify-between xl:w-[60vw] lg:w-[90vw] sm:w-[100vw] w-[100vw] z-50 bg-white ${
         change ? 'change' : ''
       }`}
     >
-      <div className="container flex justify-between">
+      <div className="container flex justify-between mx-auto">
         <Link href="/">
-          <a className="logo font-bold text-3xl">MS.</a>
+          <a className="text-3xl font-bold logo">MS.</a>
         </Link>
 
-        <ul className="nav-links flex gap-8">
+        <ul className="flex gap-8 nav-links">
           {navs.map((nav) => (
             <li
               data-cy={nav.dataCy}
-              className="nav-item text-effect font-semibold"
+              className="font-semibold nav-item text-effect"
               key={nav.href}
             >
               <Link href={nav.href}>

@@ -142,3 +142,9 @@ section {
     opacity: 1;
   }
 }
+
+@media (max-width: 1000px) {
+  .layout {
+    width: 100vw;
+  }
+}
