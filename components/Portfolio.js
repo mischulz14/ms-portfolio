@@ -10,7 +10,7 @@ function Portfolio() {
         <title>Portfolio</title>
       </Head>
 
-      <section id="portfolio" className="pb-16">
+      <section id="portfolio" className="pb-16 section">
         <div className="container flex flex-col items-center h-[100%]">
           <div className="text-wrapper">
             <h1

@@ -129,3 +129,16 @@ section {
 .stack-wrapper .img-wrapper:hover {
   transform: scale(1.05);
 }
+
+.appear {
+  animation: appear 1s ease-in;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

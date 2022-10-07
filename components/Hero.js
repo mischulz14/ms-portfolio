@@ -7,7 +7,7 @@ const Hero = () => {
   const svgRef = useRef();
 
   return (
-    <section className="hero h-[100vh]">
+    <section className="hero h-[100vh] appear">
       <div className="container flex items-center justify-center h-full gap-10">
         <div className="text-wrapper p-20 w-[50%] ">
           <h1 data-cy="homePageTitle" className="mb-6 text-2xl title">

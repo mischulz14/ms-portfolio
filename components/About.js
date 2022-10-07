@@ -9,7 +9,7 @@ function About() {
         <title>About</title>
       </Head>
 
-      <section className="about" id="about">
+      <section className="about section" id="about">
         <div className="container flex flex-col items-center h-[100%]">
           <div className="flex flex-col items-center justify-center text-wrapper">
             <h1 className="pb-8 text-3xl font-semibold text-center pt-28">
