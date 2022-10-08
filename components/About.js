@@ -9,8 +9,8 @@ function About() {
         <title>About</title>
       </Head>
 
-      <section className="about section" id="about">
-        <div className="container flex flex-col items-center h-[100%]">
+      <section className="mx-auto about section" id="about">
+        <div className="container flex flex-col items-center h-[100%] mx-auto">
           <div className="flex flex-col items-center justify-center text-wrapper">
             <h1 className="pb-8 text-3xl font-semibold text-center pt-28">
               About Me
@@ -31,28 +31,28 @@ function About() {
               </p>
               <div className="flex items-center justify-center w-full gap-4 mx-auto stack-wrapper">
                 <div className="img-wrapper">
-                  <Image src="/html.svg" alt="" width="140" height="140" />
+                  <Image src="/html.svg" alt="" width="500" height="500" />
                 </div>
                 <div className="img-wrapper">
-                  <Image src="/css.svg" alt="" width="140" height="140" />
+                  <Image src="/css.svg" alt="" width="500" height="500" />
                 </div>
                 <div className="img-wrapper">
-                  <Image src="/tailwind.svg" alt="" width="140" height="140" />
+                  <Image src="/tailwind.svg" alt="" width="500" height="500" />
                 </div>
                 <div className="img-wrapper">
-                  <Image src="/sass.svg" alt="" width="140" height="140" />
+                  <Image src="/sass.svg" alt="" width="500" height="500" />
                 </div>
                 <div className="img-wrapper">
-                  <Image src="/js.svg" alt="" width="140" height="140" />
+                  <Image src="/js.svg" alt="" width="500" height="500" />
                 </div>
                 <div className="img-wrapper">
-                  <Image src="/node.svg" alt="" width="140" height="140" />
+                  <Image src="/node.svg" alt="" width="500" height="500" />
                 </div>
                 <div className="img-wrapper">
-                  <Image src="/react.svg" alt="" width="140" height="140" />
+                  <Image src="/react.svg" alt="" width="500" height="500" />
                 </div>
                 <div className="img-wrapper">
-                  <Image src="/nextjs.svg" alt="" width="140" height="140" />
+                  <Image src="/nextjs.svg" alt="" width="500" height="500" />
                 </div>
               </div>
             </div>

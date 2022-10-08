@@ -13,10 +13,11 @@ const Hero = () => {
           <p className="mb-8 text-lg description">
             I'm a software developer from Vienna, nice to meet you!
           </p>
-
-          <Link href="#contact">
-            <a className="cta">Work with me!</a>
-          </Link>
+          <div className="z-[999]">
+            <Link href="#contact">
+              <a className="cta">Work with me!</a>
+            </Link>
+          </div>
         </div>
         <div className="relative">
           <div className="image-wrapper ">
@@ -30,7 +31,7 @@ const Hero = () => {
           <svg
             fill="#6c63ff"
             id="blob1"
-            className="absolute -top-20 blob scale-[1.4] -right-20"
+            className="absolute -top-20 blob scale-[1.4] -right-20 -z-50"
             viewBox="0 0 900 600"
             width="500"
             height="500"

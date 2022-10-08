@@ -11,7 +11,7 @@ function Portfolio() {
       </Head>
 
       <section id="portfolio" className="pb-16 section">
-        <div className="container flex flex-col items-center h-[100%]">
+        <div className="container flex flex-col items-center h-[100%] mx-auto">
           <div className="text-wrapper">
             <h1
               data-cy="pageTitle"

@@ -60,6 +60,7 @@ section {
   border-radius: 10px;
   font-size: larger;
   transition: all 0.25s ease-in-out;
+  z-index: 10000;
 }
 
 .cta:hover {

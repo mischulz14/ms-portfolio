@@ -8,7 +8,7 @@ function Contact() {
       </Head>
 
       <section id="contact" className="pb-10 text-center section">
-        <div className="container">
+        <div className="container mx-auto">
           <div className="w-full text-wrapper">
             <h1
               data-cy="pageTitle"
