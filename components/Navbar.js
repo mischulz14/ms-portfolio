@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 
 function Navbar({ router }) {
   const [change, setChange] = useState(false);
-  const [show, setShow] = useState(false);
+  const [showSideNav, setShowSideNav] = useState(false);
   const navs = [
     { text: 'About', href: '#about', dataCy: 'aboutPageLink' },
     { text: 'Portfolio', href: '#portfolio', dataCy: 'portfolioPageLink' },
@@ -38,7 +38,7 @@ function Navbar({ router }) {
           <a className="text-3xl font-bold logo">MS.</a>
         </Link>
 
-        <ul className="flex gap-8 nav-links">
+        <ul className="hidden gap-8 sm:flex nav-links">
           {navs.map((nav) => (
             <li
               data-cy={nav.dataCy}
@@ -53,24 +53,24 @@ function Navbar({ router }) {
         </ul>
 
         <div
-          onClick={() => setShow(true)}
-          className={`${
-            show ? 'hidden' : 'block'
-          } flex flex-col items-center justify-center nav-side w-[35px] cursor-pointer`}
+          onClick={() => setShowSideNav(true)}
+          className={`hamburger ${
+            showSideNav ? 'hidden' : 'block'
+          } flex flex-col items-center justify-center sm:hidden  w-[35px] cursor-pointer`}
         >
-          <div className=" h-[2px] bg-black mb-[8px] mt-[7px]"></div>
-          <div className=" h-[2px] bg-black mb-[8px]"></div>
-          <div className=" h-[2px] bg-black"></div>
+          <div className=" h-[2px] bg-black mb-[8px] mt-[7px] w-[100%]"></div>
+          <div className=" h-[2px] bg-black mb-[8px] w-[100%]"></div>
+          <div className=" h-[2px] bg-black w-[100%]"></div>
         </div>
       </div>
 
       <ul
-        className={`${
-          show ? 'block' : 'hidden'
-        } flex flex-col pt-20 px-10 bg-slate-50 backdrop-blur-sm opacity-90 gap-8 absolute top-0 right-0 h-[100vh] transition-all duration-300`}
+        className={`side-nav ${
+          showSideNav ? 'block' : 'hidden'
+        } flex flex-col pt-20 px-10 bg-slate-50 backdrop-blur-sm opacity-95 gap-8 absolute top-0 right-0 h-[100vh] transition-all duration-300`}
       >
         <button
-          onClick={() => setShow(false)}
+          onClick={() => setShowSideNav(false)}
           className="absolute text-bold translate-x-[180%] z-50 -translate-y-[150%] bg-slate-500 text-white rounded-full opacity-100 w-[40px] h-[40px]"
         >
           X

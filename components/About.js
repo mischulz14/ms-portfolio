@@ -15,7 +15,7 @@ function About() {
             <h1 className="pb-8 text-3xl font-semibold text-center pt-28">
               About Me
             </h1>
-            <p className="block text-xl leading-8 text-center description">
+            <p className="block text-xl leading-8 text-center description sm:px-28 lg:px-48">
               I am a self-taught/bootcamp-taught developer based in Vienna.
               Before becoming a software developer I studied nutritional science
               and genetics and worked as a molecular biologist. Despite being a
@@ -29,30 +29,30 @@ function About() {
                 </span>{' '}
                 is my Tech stack
               </p>
-              <div className="flex items-center justify-center w-full gap-4 mx-auto stack-wrapper">
+              <div className="grid flex-wrap justify-center w-full grid-cols-4 gap-4 mx-auto sm:flex sm:flex-nowrap stack-wrapper sm:h-auto">
                 <div className="img-wrapper">
-                  <Image src="/html.svg" alt="" width="500" height="500" />
+                  <Image src="/html.svg" alt="" width="300" height="300" />
                 </div>
                 <div className="img-wrapper">
-                  <Image src="/css.svg" alt="" width="500" height="500" />
+                  <Image src="/css.svg" alt="" width="300" height="300" />
                 </div>
                 <div className="img-wrapper">
-                  <Image src="/tailwind.svg" alt="" width="500" height="500" />
+                  <Image src="/tailwind.svg" alt="" width="300" height="300" />
                 </div>
                 <div className="img-wrapper">
-                  <Image src="/sass.svg" alt="" width="500" height="500" />
+                  <Image src="/sass.svg" alt="" width="300" height="300" />
                 </div>
                 <div className="img-wrapper">
-                  <Image src="/js.svg" alt="" width="500" height="500" />
+                  <Image src="/js.svg" alt="" width="300" height="300" />
                 </div>
                 <div className="img-wrapper">
-                  <Image src="/node.svg" alt="" width="500" height="500" />
+                  <Image src="/node.svg" alt="" width="300" height="300" />
                 </div>
                 <div className="img-wrapper">
-                  <Image src="/react.svg" alt="" width="500" height="500" />
+                  <Image src="/react.svg" alt="" width="300" height="300" />
                 </div>
                 <div className="img-wrapper">
-                  <Image src="/nextjs.svg" alt="" width="500" height="500" />
+                  <Image src="/nextjs.svg" alt="" width="300" height="300" />
                 </div>
               </div>
             </div>

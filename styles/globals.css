@@ -50,6 +50,10 @@ section {
   width: 65px;
 }
 
+.side-nav.block {
+  animation: sidenav 0.3s ease-in-out;
+}
+
 /* buttons */
 
 .cta {
@@ -109,12 +113,14 @@ section {
 .change {
   box-shadow: 0 8px 24px rgb(0 0 0 / 10%);
   backdrop-filter: 15px;
-  opacity: 0.8;
+  opacity: 0.92;
   margin-top: 0;
+  z-index: 9999999;
 }
 
 .image-wrapper img {
   border-radius: 50%;
+  width: 100%;
   object-fit: cover;
   z-index: 10;
 }
@@ -138,6 +144,10 @@ section {
   animation: appear 1s ease-in;
 }
 
+/* =======================
+SECTION === 'ANIMATIONS' === SECTION
+======================= */
+
 @keyframes appear {
   from {
     opacity: 0;
@@ -147,7 +157,21 @@ section {
   }
 }
 
-@media (max-width: 700px) {
+@keyframes sidenav {
+  from {
+    clip-path: circle(60px);
+  }
+
+  to {
+    clip-path: circle(100%);
+  }
+}
+
+/* =======================
+SECTION === 'RESPONSIVE CLASSES' === SECTION
+======================= */
+
+/* @media (max-width: 700px) {
   .hero-container {
     flex-direction: column;
   }
@@ -169,18 +193,4 @@ section {
   .blob {
     right: -100px;
   }
-}
-
-.nav-side {
-  display: none;
-}
-
-@media (max-width: 500px) {
-  .nav-links {
-    display: none;
-  }
-
-  .nav-side {
-    display: block;
-  }
-}
+} */

@@ -19,7 +19,7 @@ function Portfolio() {
             >
               Projects
             </h1>
-            <p className="pb-16 text-lg text-center description">
+            <p className="px-4 pb-16 text-lg text-center description">
               <span className="text-effect pb-2 pl-[2px]">These</span> are some
               of my projects! Feel free to check them out!
             </p>

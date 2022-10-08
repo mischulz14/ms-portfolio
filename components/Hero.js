@@ -3,14 +3,17 @@ import Link from 'next/link';
 
 const Hero = () => {
   return (
-    <section className="hero h-[100vh] appear">
-      <div className="flex items-center justify-center h-full gap-10 hero-container">
-        <div className="text-wrapper hero-text p-20 w-[50%] ">
-          <h1 data-cy="homePageTitle" className="mb-6 text-2xl title">
+    <section className="hero mx-auto sm:h-[100vh] appear pb-16 sm:pb-0">
+      <div className="grid items-center h-full grid-cols-1 gap-10 mx-auto sm:grid-cols-2 justify-items-center sm:flex-row hero-container">
+        <div className="text-wrapper mt-28 hero-text p-4 sm:w-[100%] lg:w-[60%]">
+          <h1
+            data-cy="homePageTitle"
+            className="px-10 mb-6 text-2xl sm:px-0 title"
+          >
             <span className="inline-block py-2 text-effect">Hi,</span> my name
             is Michael!
           </h1>
-          <p className="mb-8 text-lg description">
+          <p className="px-4 mb-8 text-lg description">
             I'm a software developer from Vienna, nice to meet you!
           </p>
           <div className="z-[999]">
@@ -22,19 +25,19 @@ const Hero = () => {
         <div className="relative">
           <div className="image-wrapper ">
             <Image
-              width="300"
-              height="300"
+              width="250"
+              height="250"
               alt="developer-picture"
-              src="/portfolio-img.jpeg"
+              src="/portfolio-img.jpg"
             />
           </div>
           <svg
             fill="#6c63ff"
             id="blob1"
-            className="absolute -top-20 blob scale-[1.4] -right-20 -z-50"
+            className="absolute -top-20 blob sm:scale-[1.4] scale-[1.3] -right-20 -z-50"
             viewBox="0 0 900 600"
-            width="500"
-            height="500"
+            width="450"
+            height="450"
             xmlns="http://www.w3.org/2000/svg"
             xmlnsXlink="http://www.w3.org/1999/xlink"
             version="1.1"
