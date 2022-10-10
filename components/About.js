@@ -54,6 +54,12 @@ function About() {
                 <div className="img-wrapper">
                   <Image src="/nextjs.svg" alt="" width="300" height="300" />
                 </div>
+                <div className="img-wrapper">
+                  <Image src="/git.svg" alt="" width="300" height="300" />
+                </div>
+                <div className="img-wrapper">
+                  <Image src="/github.svg" alt="" width="300" height="300" />
+                </div>
               </div>
             </div>
             <p className="pb-8 text-lg pt-14">Do you want to work together?</p>
