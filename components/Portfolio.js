@@ -25,7 +25,7 @@ function Portfolio() {
             </p>
 
             <div className="flex flex-wrap justify-center gap-10 portfolio-wrapper">
-              {/* <div className="portfolio-item">
+              <div className="portfolio-item">
                 <Link
                   href="https://origame-ecommerce.netlify.app/"
                   target="_blank"
@@ -40,7 +40,7 @@ function Portfolio() {
                 </Link>
 
                 <h4 className="portfolio-name">E-commerce Mock-up</h4>
-              </div> */}
+              </div>
               <div className="portfolio-item">
                 <Link href="https://react-meme-generator14.netlify.app/">
                   <Image
