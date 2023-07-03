@@ -87,8 +87,10 @@ section {
   border-radius: 10px;
   display: flex;
   width: 300px;
+  height: 300px;
+  gap: 1rem;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   padding: 2rem 0.5rem;
   transition: all 0.25s ease-in-out;
@@ -102,10 +104,11 @@ section {
 
 .portfolio-item img {
   object-fit: cover;
+  width: 200px;
+  height: 200px;
 }
 
 .portfolio-name {
-  padding: 0.8rem 0.2rem;
   font-weight: medium;
   font-size: 1.1rem;
 }
@@ -202,7 +205,6 @@ SECTION === 'RESPONSIVE CLASSES' === SECTION
   }
 } */
 
-/* LOADER */
 /* LOADER */
 
 .loader {

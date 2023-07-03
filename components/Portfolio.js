@@ -32,8 +32,6 @@ function Portfolio() {
                   target="_blank"
                 >
                   <img
-                    width="200"
-                    height="200"
                     src="/ecommerce.jpg"
                     className="portfolio-image"
                     alt=""
@@ -44,13 +42,7 @@ function Portfolio() {
               </div>
               <div className="portfolio-item">
                 <Link href="https://react-meme-generator14.netlify.app/">
-                  <img
-                    width="200"
-                    height="200"
-                    src="/memes.jpg"
-                    className="portfolio-image"
-                    alt=""
-                  />
+                  <img src="/memes.jpg" className="portfolio-image" alt="" />
                 </Link>
 
                 <h4 className="portfolio-name">Meme Generator</h4>
@@ -58,8 +50,6 @@ function Portfolio() {
               <div className="portfolio-item">
                 <Link href="https://react-random-colors.netlify.app/">
                   <img
-                    width="200"
-                    height="200"
                     src="/randomcolors.jpg"
                     className="portfolio-image"
                     alt=""
@@ -72,8 +62,6 @@ function Portfolio() {
               <div className="portfolio-item">
                 <Link href="https://rock-paper-scissors-lizard-spock-ms.netlify.app/">
                   <img
-                    width="200"
-                    height="200"
                     src="/rock-paper.jpg"
                     className="portfolio-image"
                     alt=""
@@ -84,13 +72,7 @@ function Portfolio() {
 
               <div className="portfolio-item">
                 <Link href="https://cozy-hangman.netlify.app/">
-                  <img
-                    width="200"
-                    height="200"
-                    src="/hangman.jpg"
-                    className="portfolio-image"
-                    alt=""
-                  />
+                  <img src="/hangman.jpg" className="portfolio-image" alt="" />
                 </Link>
 
                 <h4 className="portfolio-name">Cozy Hangman Game</h4>
@@ -98,14 +80,11 @@ function Portfolio() {
               <div className="portfolio-item">
                 <Link href="https://react-landing-page-clone-14.netlify.app/">
                   <img
-                    width="200"
-                    height="200"
                     src="/landing-page.jpg"
                     className="portfolio-image"
                     alt=""
                   />
                 </Link>
-
                 <h4 className="portfolio-name">Landing Page</h4>
               </div>
             </div>
