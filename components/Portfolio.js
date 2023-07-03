@@ -1,6 +1,7 @@
 import Head from 'next/head';
-import Image from 'next/image';
+import img from 'next/image';
 import Link from 'next/link';
+
 import Navbar from '../components/Navbar';
 
 function Portfolio() {
@@ -30,7 +31,7 @@ function Portfolio() {
                   href="https://origame-ecommerce.netlify.app/"
                   target="_blank"
                 >
-                  <Image
+                  <img
                     width="200"
                     height="200"
                     src="/ecommerce.jpg"
@@ -43,7 +44,7 @@ function Portfolio() {
               </div>
               <div className="portfolio-item">
                 <Link href="https://react-meme-generator14.netlify.app/">
-                  <Image
+                  <img
                     width="200"
                     height="200"
                     src="/memes.jpg"
@@ -56,7 +57,7 @@ function Portfolio() {
               </div>
               <div className="portfolio-item">
                 <Link href="https://react-random-colors.netlify.app/">
-                  <Image
+                  <img
                     width="200"
                     height="200"
                     src="/randomcolors.jpg"
@@ -70,7 +71,7 @@ function Portfolio() {
 
               <div className="portfolio-item">
                 <Link href="https://rock-paper-scissors-lizard-spock-ms.netlify.app/">
-                  <Image
+                  <img
                     width="200"
                     height="200"
                     src="/rock-paper.jpg"
@@ -83,7 +84,7 @@ function Portfolio() {
 
               <div className="portfolio-item">
                 <Link href="https://cozy-hangman.netlify.app/">
-                  <Image
+                  <img
                     width="200"
                     height="200"
                     src="/hangman.jpg"
@@ -96,7 +97,7 @@ function Portfolio() {
               </div>
               <div className="portfolio-item">
                 <Link href="https://react-landing-page-clone-14.netlify.app/">
-                  <Image
+                  <img
                     width="200"
                     height="200"
                     src="/landing-page.jpg"

@@ -12,7 +12,17 @@ import Portfolio from '../components/Portfolio';
 function Home() {
   const [isImageLoaded, setIsImageLoaded] = useState(false);
 
-  const imagePaths = ['/portfolio-img.jpg'];
+  const imagePaths = [
+    '/portfolio-img.jpg',
+    'randomcolors.jpg',
+    'memes.jpg',
+    'ecommerce.jpg',
+    'hangman.jpg',
+    'rock-paper.jpg',
+    'landing-page.jpg',
+    'kajian.jpg',
+    'sass.jpg',
+  ];
 
   useEffect(() => {
     const images = imagePaths.map((path) => {

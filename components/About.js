@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import Image from 'next/image';
+import img from 'next/image';
 import Link from 'next/link';
 
 function About() {
@@ -31,34 +31,34 @@ function About() {
               </p>
               <div className="grid flex-wrap justify-center w-full grid-cols-4 gap-4 mx-auto sm:flex sm:flex-nowrap stack-wrapper sm:h-auto">
                 <div className="img-wrapper">
-                  <Image src="/html.svg" alt="" width="300" height="300" />
+                  <img src="/html.svg" alt="" width="300" height="300" />
                 </div>
                 <div className="img-wrapper">
-                  <Image src="/css.svg" alt="" width="300" height="300" />
+                  <img src="/css.svg" alt="" width="300" height="300" />
                 </div>
                 <div className="img-wrapper">
-                  <Image src="/tailwind.svg" alt="" width="300" height="300" />
+                  <img src="/tailwind.svg" alt="" width="300" height="300" />
                 </div>
                 <div className="img-wrapper">
-                  <Image src="/sass.svg" alt="" width="300" height="300" />
+                  <img src="/sass.svg" alt="" width="300" height="300" />
                 </div>
                 <div className="img-wrapper">
-                  <Image src="/js.svg" alt="" width="300" height="300" />
+                  <img src="/js.svg" alt="" width="300" height="300" />
                 </div>
                 <div className="img-wrapper">
-                  <Image src="/node.svg" alt="" width="300" height="300" />
+                  <img src="/node.svg" alt="" width="300" height="300" />
                 </div>
                 <div className="img-wrapper">
-                  <Image src="/react.svg" alt="" width="300" height="300" />
+                  <img src="/react.svg" alt="" width="300" height="300" />
                 </div>
                 <div className="img-wrapper">
-                  <Image src="/nextjs.svg" alt="" width="300" height="300" />
+                  <img src="/nextjs.svg" alt="" width="300" height="300" />
                 </div>
                 <div className="img-wrapper">
-                  <Image src="/git.svg" alt="" width="300" height="300" />
+                  <img src="/git.svg" alt="" width="300" height="300" />
                 </div>
                 <div className="img-wrapper">
-                  <Image src="/github.svg" alt="" width="300" height="300" />
+                  <img src="/github.svg" alt="" width="300" height="300" />
                 </div>
               </div>
             </div>
