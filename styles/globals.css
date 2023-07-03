@@ -213,7 +213,7 @@ SECTION === 'RESPONSIVE CLASSES' === SECTION
   height: 20px;
   position: absolute;
   border-radius: 50%;
-  background-color: #a8a8a8;
+  background-color: #6b63ff;
   left: 15%;
   transform-origin: 50%;
   animation: circle7124 0.5s alternate infinite ease;
@@ -253,7 +253,7 @@ SECTION === 'RESPONSIVE CLASSES' === SECTION
   width: 20px;
   height: 4px;
   border-radius: 50%;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.223);
   position: absolute;
   top: 62px;
   transform-origin: 50%;
