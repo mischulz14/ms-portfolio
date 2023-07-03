@@ -1,15 +1,34 @@
 import kute from 'kute.js';
 import Head from 'next/head';
-import Image from 'next/image';
 import Link from 'next/link';
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
+
 import About from '../components/About';
 import Contact from '../components/Contact';
 import Hero from '../components/Hero';
+import Loader from '../components/Loader';
 import Portfolio from '../components/Portfolio';
 
 function Home() {
+  const [isImageLoaded, setIsImageLoaded] = useState(false);
+
+  const imagePaths = ['/portfolio-img.jpg'];
+
   useEffect(() => {
+    const images = imagePaths.map((path) => {
+      const img = new Image();
+      img.src = path;
+      return img;
+    });
+    Promise.all(
+      images.map((image) => {
+        return new Promise((resolve, reject) => {
+          image.onload = resolve;
+        });
+      }),
+    ).then(() => setIsImageLoaded(true));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+
     document.title = 'Michael Schulz Portfolio';
 
     const sections = document.querySelectorAll('.section');
@@ -40,6 +59,14 @@ function Home() {
 
   const aboutRef = useRef();
   const contactRef = useRef();
+
+  if (!isImageLoaded) {
+    return (
+      <div className="sm:w-[100vw] loader h-[100vh] flex justify-center items-center">
+        <Loader />
+      </div>
+    );
+  }
 
   return (
     <>

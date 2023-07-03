@@ -15,7 +15,7 @@ function About() {
             <h1 className="pb-8 text-3xl font-semibold text-center pt-28">
               About Me
             </h1>
-            <p className="block text-xl leading-8 text-center description sm:px-28 lg:px-48">
+            <p className="block text-xl leading-8 text-center description sm:px-16 lg:px-28">
               I am a self-taught/bootcamp-taught developer based in Vienna.
               Before becoming a software developer I studied nutritional science
               and genetics and worked as a molecular biologist. Despite being a
