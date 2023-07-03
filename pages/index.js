@@ -36,11 +36,7 @@ function Home() {
           image.onload = resolve;
         });
       }),
-    ).then(() =>
-      setTimeout(() => {
-        setIsImageLoaded(true);
-      }, 1000),
-    );
+    ).then(() => setIsImageLoaded(true));
     // eslint-disable-next-line react-hooks/exhaustive-deps
 
     document.title = 'Michael Schulz Portfolio';
@@ -74,16 +70,13 @@ function Home() {
   const aboutRef = useRef();
   const contactRef = useRef();
 
-  if (!isImageLoaded) {
-    return (
-      <div className="loader h-[100vh] flex justify-center items-center">
-        <Loader />
-      </div>
-    );
-  }
-
   return (
     <>
+      {!isImageLoaded && (
+        <div className="loader h-[100vh] absolute top-0 left-0 w-full z-[9999] flex justify-center items-center">
+          <Loader />
+        </div>
+      )}
       <Head>
         <title>Home</title>
       </Head>
