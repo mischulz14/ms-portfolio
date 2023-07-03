@@ -72,19 +72,21 @@ function Home() {
 
   return (
     <>
-      {!isImageLoaded && (
+      {!isImageLoaded ? (
         <div className="loader h-[100vh] absolute top-0 left-0 w-full z-[9999] flex justify-center items-center">
           <Loader />
         </div>
+      ) : (
+        <>
+          <Head>
+            <title>Home</title>
+          </Head>
+          <Hero />
+          <About />
+          <Portfolio />
+          <Contact />
+        </>
       )}
-      <Head>
-        <title>Home</title>
-      </Head>
-
-      <Hero />
-      <About />
-      <Portfolio />
-      <Contact />
     </>
   );
 }
