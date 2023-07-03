@@ -24,7 +24,7 @@ const Hero = () => {
         </div>
         <div className="relative">
           <div className="image-wrapper ">
-            <Image
+            <img
               width="250"
               height="250"
               alt="developer-picture"
