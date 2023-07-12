@@ -19,7 +19,7 @@ function Contact() {
             <p className="mb-8 text-lg description">
               Thanks for checking out my page! Currently I am happily employed
               at{' '}
-              <a className="text-[#6b63ff3d]" href="https://www.atempo.at/">
+              <a className="text-blue-700" href="https://www.atempo.at/">
                 Atempo
               </a>{' '}
               and not looking for new opportunities. But if you have any
