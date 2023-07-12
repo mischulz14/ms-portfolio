@@ -18,9 +18,12 @@ function Contact() {
             </h1>
             <p className="mb-8 text-lg description">
               Thanks for checking out my page! Currently I am happily employed
-              at <a href="https://www.atempo.at/">Atempo</a> and not looking for
-              new opportunities. But if you have any questions or just want to
-              say hi, feel free to contact me!
+              at{' '}
+              <a className="text-[#6b63ff3d]" href="https://www.atempo.at/">
+                Atempo
+              </a>{' '}
+              and not looking for new opportunities. But if you have any
+              questions or just want to say hi, feel free to contact me!
             </p>
             <ul className="contact-links">
               <li className="mb-6 contact-item">
