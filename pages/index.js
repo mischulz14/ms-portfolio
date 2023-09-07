@@ -41,10 +41,8 @@ function Home() {
   }, []);
 
   const heroRef = useRef(null);
-  const aboutRef = useRef(null);
 
   const heroScroll = useScroll({ target: heroRef });
-  const aboutScroll = useScroll({ target: aboutRef });
 
   return (
     <>
@@ -67,8 +65,6 @@ function Home() {
             <Hero />
           </motion.div>
           <About />
-
-          {/* Repeat for other components as needed */}
           <Portfolio />
           <Contact />
         </>
