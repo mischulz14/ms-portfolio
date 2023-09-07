@@ -46,7 +46,18 @@ function About() {
                   <img src="/js.svg" alt="" width="300" height="300" />
                 </div>
                 <div className="img-wrapper">
+                  <img
+                    src="/typescriptIcon.png"
+                    alt=""
+                    width="300"
+                    height="300"
+                  />
+                </div>
+                <div className="img-wrapper">
                   <img src="/node.svg" alt="" width="300" height="300" />
+                </div>
+                <div className="img-wrapper">
+                  <img src="/GraphQLLogo.svg" alt="" width="300" height="300" />
                 </div>
                 <div className="img-wrapper">
                   <img src="/react.svg" alt="" width="300" height="300" />

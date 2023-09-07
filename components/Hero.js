@@ -3,9 +3,9 @@ import Link from 'next/link';
 
 const Hero = () => {
   return (
-    <section className="hero mx-auto sm:h-[100vh] appear pb-16 sm:pb-0">
-      <div className="grid items-center h-full grid-cols-1 mx-auto sm:grid-cols-2 justify-items-center sm:flex-row hero-container">
-        <div className="text-wrapper mt-28 hero-text sm:w-[100%] lg:w-[60%]">
+    <section className=" mx-auto sm:h-[100vh] appear pb-16 sm:pb-0">
+      <div className="grid items-center h-full grid-cols-1 mx-auto sm:grid-cols-2 justify-items-center sm:flex-row ">
+        <div className="text-wrapper mt-28  sm:w-[100%] lg:w-[60%]">
           <h1
             data-cy="homePageTitle"
             className="px-10 mb-6 text-2xl sm:px-0 title"

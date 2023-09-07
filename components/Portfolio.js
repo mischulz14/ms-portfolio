@@ -48,44 +48,11 @@ function Portfolio() {
                 <h4 className="portfolio-name">Meme Generator</h4>
               </div>
               <div className="portfolio-item">
-                <Link href="https://react-random-colors.netlify.app/">
-                  <img
-                    src="/randomcolors.jpg"
-                    className="portfolio-image"
-                    alt=""
-                  />
-                </Link>
-
-                <h4 className="portfolio-name">Random Color Generator</h4>
-              </div>
-
-              <div className="portfolio-item">
-                <Link href="https://rock-paper-scissors-lizard-spock-ms.netlify.app/">
-                  <img
-                    src="/rock-paper.jpg"
-                    className="portfolio-image"
-                    alt=""
-                  />
-                </Link>
-                <h4 className="portfolio-name">Rock Paper Scissors Game</h4>
-              </div>
-
-              <div className="portfolio-item">
                 <Link href="https://cozy-hangman.netlify.app/">
                   <img src="/hangman.jpg" className="portfolio-image" alt="" />
                 </Link>
 
                 <h4 className="portfolio-name">Cozy Hangman Game</h4>
-              </div>
-              <div className="portfolio-item">
-                <Link href="https://react-landing-page-clone-14.netlify.app/">
-                  <img
-                    src="/landing-page.jpg"
-                    className="portfolio-image"
-                    alt=""
-                  />
-                </Link>
-                <h4 className="portfolio-name">Landing Page</h4>
               </div>
             </div>
           </div>
