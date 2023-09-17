@@ -26,34 +26,34 @@ function Portfolio() {
             </p>
 
             <div className="flex flex-wrap justify-center gap-10 portfolio-wrapper">
-              <div className="portfolio-item">
-                <Link
-                  href="https://origame-ecommerce.netlify.app/"
-                  target="_blank"
-                >
+              <Link
+                href="https://origame-ecommerce.netlify.app/"
+                target="_blank"
+              >
+                <div className="portfolio-item">
                   <img
                     src="/ecommerce.jpg"
                     className="portfolio-image"
                     alt=""
                   />
-                </Link>
 
-                <h4 className="portfolio-name">E-commerce Mock-up</h4>
-              </div>
-              <div className="portfolio-item">
-                <Link href="https://react-meme-generator14.netlify.app/">
+                  <h4 className="portfolio-name">E-commerce Mock-up</h4>
+                </div>
+              </Link>
+              <Link href="https://react-meme-generator14.netlify.app/">
+                <div className="portfolio-item">
                   <img src="/memes.jpg" className="portfolio-image" alt="" />
-                </Link>
 
-                <h4 className="portfolio-name">Meme Generator</h4>
-              </div>
-              <div className="portfolio-item">
-                <Link href="https://cozy-hangman.netlify.app/">
+                  <h4 className="portfolio-name">Meme Generator</h4>
+                </div>
+              </Link>
+              <Link href="https://cozy-hangman.netlify.app/">
+                <div className="portfolio-item">
                   <img src="/hangman.jpg" className="portfolio-image" alt="" />
-                </Link>
 
-                <h4 className="portfolio-name">Cozy Hangman Game</h4>
-              </div>
+                  <h4 className="portfolio-name">Cozy Hangman Game</h4>
+                </div>
+              </Link>
             </div>
           </div>
         </div>
